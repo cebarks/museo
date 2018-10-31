@@ -128,7 +128,7 @@ class CuratorTest < Minitest::Test
     setup_photos
 
     actual = @curator.photographs_taken_by_artists_from("United States")
-    actual.each { |photo| assert_equal "United States", photo.country }
+    assert_equal 3, actual.length
 
     actual = @curator.photographs_taken_by_artists_from("Argentina")
     assert_equal [], actual
