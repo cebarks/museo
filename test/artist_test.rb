@@ -20,7 +20,7 @@ class ArtistTest < Minitest::Test
   end
 
   def test_it_has_an_id
-    assert_equal 2, @artist.id
+    assert_equal "2", @artist.id
   end
 
   def test_it_has_a_name
