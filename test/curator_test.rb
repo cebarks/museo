@@ -60,7 +60,7 @@ class CuratorTest < Minitest::Test
 
   def test_it_can_add_artists
     setup_artists
-    assert_equal 2, @curator.photographs.length
+    assert_equal 2, @curator.artists.length
     assert_equal "Henri Cartier-Bresson", @curator.artists.first.name
   end
 
