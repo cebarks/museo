@@ -65,10 +65,12 @@ class CuratorTest < Minitest::Test
   end
 
   def test_it_can_find_artists_by_id
+    setup_artists
     assert_equal "Henri Cartier-Bresson", @curator.find_artist_by_id("1").name
   end
 
   def test_it_can_find_photograph_by_id
+    setup_photos
     assert_equal "Moonrise, Hernandez", @curator.find_photograph_by_id("2").name
   end
 end
