@@ -154,7 +154,7 @@ class CuratorTest < Minitest::Test
     @curator.load_artists('./data/artists.csv')
 
     expected = {44=>"Identical Twins, Roselle, New Jersey", 39=>"Child with Toy Hand Grenade in Central Park"}
-    actual = curator.artists_photographs_by_age(curator.find_artist_by_id("3"))
+    actual = @curator.artists_photographs_by_age(@curator.find_artist_by_id("3"))
 
     assert_equal expected, actual
   end
